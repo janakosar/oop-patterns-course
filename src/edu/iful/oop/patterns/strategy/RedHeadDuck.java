@@ -1,7 +1,7 @@
 package edu.iful.oop.patterns.strategy;
 
 /**
- * Created by vertigo on 08.10.17.
+ * Ще одна качка із всесвіту качок.
  */
 public class RedHeadDuck extends Duck {
 

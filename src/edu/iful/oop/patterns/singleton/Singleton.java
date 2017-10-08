@@ -1,6 +1,9 @@
 package edu.iful.oop.patterns.singleton;
 
-
+/**
+ * Реалызуйте шаблон Singleton таким чином, що б об'єкт цього класу
+ * можна було створити лише в одному екземплярі.
+ */
 public class Singleton {
 
     // Оголосіть приватну статичну змінну INSTANCE типу Singleton.

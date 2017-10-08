@@ -1,7 +1,7 @@
 package edu.iful.oop.patterns.strategy.behavior;
 
 /**
- * Created by vertigo on 08.10.17.
+ * Пищалка замість крякання.
  */
 public class Squeak implements QuackBehavior {
 

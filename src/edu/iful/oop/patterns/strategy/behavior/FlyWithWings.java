@@ -1,7 +1,7 @@
 package edu.iful.oop.patterns.strategy.behavior;
 
 /**
- * Реалізація польоту.
+ * Реалізація польоту на крилах.
  */
 public class FlyWithWings implements FlyBehavior {
 

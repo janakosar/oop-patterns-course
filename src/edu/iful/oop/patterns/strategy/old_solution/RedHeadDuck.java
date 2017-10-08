@@ -1,6 +1,10 @@
 package edu.iful.oop.patterns.strategy.old_solution;
 
+/**
+ * Спробуйте вилучити методи поведінки quack() і fly() у відповідні інтерфейси.
+ */
 public class RedHeadDuck extends Duck {
+
     @Override
     public void quack() {
 
@@ -8,16 +12,6 @@ public class RedHeadDuck extends Duck {
 
     @Override
     public void fly() {
-
-    }
-
-    @Override
-    public void swim() {
-
-    }
-
-    @Override
-    public void display() {
 
     }
 }

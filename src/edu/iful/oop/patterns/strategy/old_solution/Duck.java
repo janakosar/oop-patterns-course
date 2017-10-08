@@ -1,18 +1,19 @@
 package edu.iful.oop.patterns.strategy.old_solution;
 
 /**
- * Джо працює на компанію, що випускає надзвичайно
- * успішний імітатор качиного ставка. В цій грі подано
- * ставок, де плавають и крякають качки різних видів.
- * Проектувальники системи скористалися стандартним
- * прийомом ООП и визначили суперклас Duck,
- * на основі якого об'являються типи конкретних видів качок.
+ * Спробуйте вилучити методи поведінки quack() і fly() у відповідні інтерфейси.
  */
-
 public abstract class Duck {
 
-    public abstract void swim();
-    public abstract void display();
+    public static final String SWIM_MESSAGE = "Всі качки плавають!";
+    public static final String DISPLAY_MESSAGE = "Ви бачите на екрані чудову качку";
+
+    public String swim() {
+        return SWIM_MESSAGE;
+    }
+    public String display() {
+        return DISPLAY_MESSAGE;
+    }
 
     public abstract void quack();
     public abstract void fly();

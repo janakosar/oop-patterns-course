@@ -1,9 +1,7 @@
 package edu.iful.oop.patterns.strategy.behavior;
 
-import edu.iful.oop.patterns.strategy.behavior.QuackBehavior;
-
 /**
- * Created by vertigo on 08.10.17.
+ * Звичайне крякання.
  */
 public class Quack implements QuackBehavior {
 

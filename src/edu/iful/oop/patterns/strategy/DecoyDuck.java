@@ -5,9 +5,8 @@ package edu.iful.oop.patterns.strategy;
  */
 public class DecoyDuck extends Duck {
 
-
     public DecoyDuck() {
-        // Ініціалізуйте поведінку uevjdj] качки:
+        // Ініціалізуйте поведінку качки-приманки:
         // ця качка не літатє і пищить.
     }
 }

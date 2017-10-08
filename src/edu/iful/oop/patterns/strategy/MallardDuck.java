@@ -6,7 +6,7 @@ package edu.iful.oop.patterns.strategy;
 public class MallardDuck extends Duck {
 
     public MallardDuck() {
-        // Ініціалізуйте поведінку качки:
+        // Ініціалізуйте поведінку дикої качки:
         // дика качка вміє літати і крякати.
     }
 }

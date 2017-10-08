@@ -1,7 +1,7 @@
 package edu.iful.oop.patterns.strategy.behavior;
 
 /**
- * Created by vertigo on 08.10.17.
+ * Нелітаюча поведінка
  */
 public class FlyNoWay implements FlyBehavior {
 
