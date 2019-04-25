@@ -9,6 +9,6 @@ public class FlyNoWay implements FlyBehavior {
 
     @Override
     public String fly() {
-        return null;
+        return FLY_MESSAGE;
     }
 }

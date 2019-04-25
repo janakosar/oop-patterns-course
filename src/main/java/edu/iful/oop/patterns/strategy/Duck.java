@@ -1,5 +1,8 @@
 package edu.iful.oop.patterns.strategy;
 
+import edu.iful.oop.patterns.strategy.behavior.FlyBehavior;
+import edu.iful.oop.patterns.strategy.behavior.QuackBehavior;
+
 /**
  * <p>
  *     Джо працює на компанію, що випускає надзвичайно
@@ -29,7 +32,8 @@ public abstract class Duck {
     // Тут необхідно оголосити дві зсилочні змінні з типами інерфейсів поведінки.
     // Ці змінні наслідуються всіма підкласами Duck.
     // Добавте 'сеттери' для цих полів.
-
+    private FlyBehavior flyBehavior;
+    private QuackBehavior quackBehavior;
 
     public String swim() {
         return SWIM_MESSAGE;
@@ -41,12 +45,19 @@ public abstract class Duck {
 
     public String performQuack() {
         // Замінити оператор 'return null;' на делегування операції класа поведінки.
-        return null;
+        return quackBehavior.quack();
     }
 
     public String performFly() {
         // Замінити оператор 'return null;' на делегування операції класа поведінки.
-        return null;
+        return flyBehavior.fly();
     }
 
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
 }
