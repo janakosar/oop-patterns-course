@@ -7,15 +7,19 @@ package edu.iful.oop.patterns.singleton;
 public class Singleton {
 
     // Оголосіть приватну статичну змінну INSTANCE типу Singleton.
+    private static Singleton INSTANCE;
 
     // Змініть режим доступу конструктора з public на private.
-    public Singleton() {
+    private Singleton() {
         System.out.println("Constructor Instance " + toString());
     }
 
     public static Singleton getInstance() {
         // Замість створення нового об'єкта Singleton
         // ініціалізуйте (один раз!) змінну INSTANCE і повертайте її значення.
-        return new Singleton();
+        if (INSTANCE == null) {
+            INSTANCE = new Singleton();
+        }
+        return INSTANCE;
     }
 }
