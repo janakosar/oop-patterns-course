@@ -16,11 +16,13 @@ public class WeatherData implements Subject {
 	public WeatherData() {
 	    // ToDo: Ініціалізуйте список Передплатників порожнім списком
         // (використайте, наприклад, ArrayList).
+		this.observers = new ArrayList<>();
 	}
 
     @Override
 	public void registerObserver(Observer o) {
         // ToDo: Додайте нового Передплатника до списку.
+		this.observers.add(o);
 	}
 
     @Override
@@ -34,10 +36,12 @@ public class WeatherData implements Subject {
     @Override
 	public void notifyObservers() {
         // ToDo: Передайте нові дані метеоспостережень кожному з Передплатників в списку за допомогою метода 'update()'.
+		this.observers.forEach(observer -> observer.update(getTemperature(), getHumidity(), getPressure()));
 	}
 	
 	public void measurementsChanged() {
         // ToDo: Повідмте своїх Передплатників про зміну даних.
+		notifyObservers();
 	}
 	
 	public void setMeasurements(float temperature, float humidity, float pressure) {
